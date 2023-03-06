@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #c4c4c4, 
+                -5px -5px 10px #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top:3% 
+
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+
+#results {
+    margin-top: 50px;
+    text-align: left;
+    display: none;
+}
+
+#results p {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+#results h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Center all content of the website */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.dark-mode {
+    background-color: rgb(82, 88, 90);
+    color: #f0f0f0;
+}
+
+.dark-mode-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+
+#dark-mode-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #c4c4c4, 
+                -5px -5px 10px #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+  
+  #dark-mode-button:hover {
+    transform: scale(1.05);
+}
+  
+  .dark-mode #dark-mode-button {
+    background-color: rgb(82, 88, 90);
+    color: #f0f0f0;
+}
